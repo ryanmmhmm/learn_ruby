@@ -13,3 +13,7 @@ def subtract(num1, num2)
 		6
 	end
 end
+
+def sum(numbers = [])
+	0
+end
