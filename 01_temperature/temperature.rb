@@ -12,9 +12,11 @@ def ftoc(temp)
 end
 
 def ctof(temp)
-	case temp
-	when 0 then 32
-	when 100 then 212
-	when 20 then 68
-	end
+	temp * 9 / 5 + 32
+
+	# case temp
+	# when 0 then 32
+	# when 100 then 212
+	# when 20 then 68
+	# end
 end
