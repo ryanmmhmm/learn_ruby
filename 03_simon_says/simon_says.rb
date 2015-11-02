@@ -15,30 +15,20 @@ def repeat(word, num = 1)
 	else
 		repeated = ""
 	end
-		num.times do
-			repeated = repeated + " #{word}"
-		end
+
+	num.times do
+		repeated = repeated + " #{word}"
+	end
+
 	repeated.strip
 end
 
 def start_of_word(name, num = 1)
 	start = ""
 	num.times do |num|
-		start << name[num - 1]
+		start << name[num]
 	end
 	start
-
-	# if (name == "Bob") && (num == 2)
-	# 	"Bo"
-	# elsif (name == "hello") && (num == 1)
-	# 	"h"
-	# elsif (name == "abcdefg") && (num == 1)
-	# 	"a"
-	# elsif (name == "abcdefg") && (num == 2)
-	# 	"ab"
-	# elsif (name == "abcdefg") && (num == 3)
-	# 	"abc"
-	# end
 end
 
 def first_word(words)
