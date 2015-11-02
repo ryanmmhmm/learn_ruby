@@ -26,7 +26,7 @@ class TestCalculator < MiniTest::Test
 # sum takes an *array* of numbers and adds them all together
 # This one is a bit trickier!
   def test_computes_sum_of_empty_array
-    assert_equal(0, sum([]))
+    assert_equal 0, sum([])
   end
 
   def test_computes_sum_of_single_number
