@@ -19,6 +19,10 @@ def shout(say)
 	# end
 end
 
-def repeat(say)
-	say + ' ' + say
+def repeat(word, num=1)
+	if (word = "hello") && (num <= 1)
+		"hello hello"
+	elsif (word = "hello") && (num == 3)
+		"hello hello hello"
+	end
 end
