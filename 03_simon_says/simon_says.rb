@@ -10,12 +10,11 @@ def shout(say)
 end
 
 def repeat(word, num=1)
-
 	repeated = ""
 	num.times do
 		repeated = repeated + " #{word}"
 	end
-	repeated = repeated.strip
+	repeated.strip
 end
 
 def start_of_word(name, num)
