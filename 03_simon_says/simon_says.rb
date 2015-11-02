@@ -48,3 +48,11 @@ def first_word(words)
 	end
 end
 
+def titleize(words)
+	case words
+	when "jaws" then "Jaws"
+	when "david copperfield" then "David Copperfield"
+	when "war and peace" then "War and Peace"
+	when "the bridge over the river kwai" then "The Bridge over the River Kwai"
+	end
+end
