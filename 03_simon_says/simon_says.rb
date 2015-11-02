@@ -18,3 +18,7 @@ def shout(say)
 	# 	"HELLO WORLD"
 	# end
 end
+
+def repeat(say)
+	say + ' ' + say
+end
