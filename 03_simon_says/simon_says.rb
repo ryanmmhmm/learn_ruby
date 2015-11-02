@@ -9,26 +9,36 @@ def shout(say)
 	say.upcase
 end
 
-def repeat(word, num=1)
-	repeated = ""
-	num.times do
-		repeated = repeated + " #{word}"
+def repeat(word, num = 1)
+	if num == 1
+		repeated = word
+	else
+		repeated = ""
 	end
+		num.times do
+			repeated = repeated + " #{word}"
+		end
 	repeated.strip
 end
 
-def start_of_word(name, num)
-	if (name == "Bob") && (num == 2)
-		"Bo"
-	elsif (name == "hello") && (num == 1)
-		"h"
-	elsif (name == "abcdefg") && (num == 1)
-		"a"
-	elsif (name == "abcdefg") && (num == 2)
-		"ab"
-	elsif (name == "abcdefg") && (num == 3)
-		"abc"
+def start_of_word(name, num = 1)
+	start = ""
+	num.times do |num|
+		start << name[num - 1]
 	end
+	start
+
+	# if (name == "Bob") && (num == 2)
+	# 	"Bo"
+	# elsif (name == "hello") && (num == 1)
+	# 	"h"
+	# elsif (name == "abcdefg") && (num == 1)
+	# 	"a"
+	# elsif (name == "abcdefg") && (num == 2)
+	# 	"ab"
+	# elsif (name == "abcdefg") && (num == 3)
+	# 	"abc"
+	# end
 end
 
 def first_word(words)
