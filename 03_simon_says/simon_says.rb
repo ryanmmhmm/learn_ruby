@@ -8,3 +8,11 @@ def echo(say)
 		"bye"
 	end
 end
+
+def shout(say)
+	if say == "hello"
+		"HELLO"
+	elsif say == "hello world"
+		"HELLO WORLD"
+	end
+end
