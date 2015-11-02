@@ -32,10 +32,13 @@ def start_of_word(name, num = 1)
 end
 
 def first_word(words)
-	case words
-	when "Hello World" then "Hello"
-	when "oh dear" then "oh"
-	end
+	splitup = words.split(' ')
+	splitup[0]
+
+	# case words
+	# when "Hello World" then "Hello"
+	# when "oh dear" then "oh"
+	# end
 end
 
 def titleize(words)
