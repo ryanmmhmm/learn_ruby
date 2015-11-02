@@ -34,18 +34,21 @@ end
 def first_word(words)
 	splitup = words.split(' ')
 	splitup[0]
-
-	# case words
-	# when "Hello World" then "Hello"
-	# when "oh dear" then "oh"
-	# end
 end
 
 def titleize(words)
-	case words
-	when "jaws" then "Jaws"
-	when "david copperfield" then "David Copperfield"
-	when "war and peace" then "War and Peace"
-	when "the bridge over the river kwai" then "The Bridge over the River Kwai"
+	splitup = words.split(' ')
+	splitup.each_with_index do |word, i|
+		if (word == "the") && (i != 0)
+			word = "the"
+		elsif (word == "and") && (i != 0)
+			word = "and"
+		elsif (word == "over") && (i != 0)
+			word = "over"
+		else
+			splitup[i][0] = word[0].upcase
+		end
 	end
+
+	splitup.join(' ')
 end
