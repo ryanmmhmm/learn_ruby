@@ -3,28 +3,19 @@
 
 def echo(say)
 	say
-	# if say == "hello"
-	# 	"hello"
-	# elsif say == "bye"
-	# 	"bye"
-	# end
 end
 
 def shout(say)
 	say.upcase
-	# if say == "hello"
-	# 	"HELLO"
-	# elsif say == "hello world"
-	# 	"HELLO WORLD"
-	# end
 end
 
 def repeat(word, num=1)
-	if (word = "hello") && (num <= 1)
-		"hello hello"
-	elsif (word = "hello") && (num == 3)
-		"hello hello hello"
+
+	repeated = ""
+	num.times do
+		repeated = repeated + " #{word}"
 	end
+	repeated = repeated.strip
 end
 
 def start_of_word(name, num)
