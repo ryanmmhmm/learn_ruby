@@ -40,3 +40,11 @@ def start_of_word(name, num)
 		"abc"
 	end
 end
+
+def first_word(words)
+	case words
+	when "Hello World" then "Hello"
+	when "oh dear" then "oh"
+	end
+end
+
