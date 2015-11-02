@@ -7,7 +7,7 @@ require './test_helper'
 # The first time you run the tests, you should get an error saying "cannot load such file -- hello.rb (LoadError)"
 # That error is coming from the line below (line #10)–
 # it means get a file with the name "hello.rb" in the current directory.
-require "hello"
+require "hello.rb"
 # To stop this error from being thrown we need to create the file:
 # $ touch hello.rb
 
@@ -21,7 +21,7 @@ class TestHello < MiniTest::Test
     # but this is the important part.
     # Line #24 is saying: if we call the method hello, what it returns should be equal to "Hello!"
     # If that's not the case, this is a failing test.
-    assert_equal("hello", hello)
+    assert_equal("Hello!", hello)
     # So in hello.rb let's define a method named hello,
     # and let's make it return "Hello!"
 
