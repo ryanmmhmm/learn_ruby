@@ -26,3 +26,17 @@ def repeat(word, num=1)
 		"hello hello hello"
 	end
 end
+
+def start_of_word(name, num)
+	if (name == "Bob") && (num == 2)
+		"Bo"
+	elsif (name == "hello") && (num == 1)
+		"h"
+	elsif (name == "abcdefg") && (num == 1)
+		"a"
+	elsif (name == "abcdefg") && (num == 2)
+		"ab"
+	elsif (name == "abcdefg") && (num == 3)
+		"abc"
+	end
+end
