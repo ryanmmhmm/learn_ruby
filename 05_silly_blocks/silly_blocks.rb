@@ -9,7 +9,7 @@ def reverser
 	string = string.join(' ')
 end
 
-def adder
+def adder(multiplier = 1)
 	num = yield
-	num += 1
+	num += (1 * multiplier)
 end
