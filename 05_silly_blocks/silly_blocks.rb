@@ -14,6 +14,6 @@ def adder(multiplier = 1)
 	num += (1 * multiplier)
 end
 
-def repeater
-	n = yield
+def repeater(repeat = 1)
+	repeat.times { yield }
 end
