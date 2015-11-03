@@ -13,3 +13,7 @@ def adder(multiplier = 1)
 	num = yield
 	num += (1 * multiplier)
 end
+
+def repeater
+	n = yield
+end
