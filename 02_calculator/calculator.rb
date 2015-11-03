@@ -16,13 +16,4 @@ def sum(numbers = [])
 		end
 		total.to_i
 	end
-	# if numbers == []
-	# 	0
-	# elsif (numbers[0] == 1) && (numbers[1] == 3) && (numbers[2] == 5) && (numbers[3] == 7) && (numbers[4] == 9)
-	# 	25
-	# elsif (numbers[0] == 7) && (numbers[1] == 11)
-	# 	18
-	# elsif	numbers[0] == 7
-	# 	7
-	# end
 end
