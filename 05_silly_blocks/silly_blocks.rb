@@ -8,3 +8,8 @@ def reverser
 	end
 	string = string.join(' ')
 end
+
+def adder
+	num = yield
+	num += 1
+end
