@@ -9,8 +9,13 @@ class Book
 
 	def title
 		name = @title.split
+
 		name.each do |name|
-			name = name.capitalize!
+			case name
+			when "the" then "the"
+			else
+				name = name.capitalize!
+			end
 		end
 		@title = name.join(' ')
 	end
