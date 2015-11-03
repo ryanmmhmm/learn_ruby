@@ -8,7 +8,10 @@ class Book
 	# end
 
 	def title
-		@title = @title.capitalize
+		name = @title.split
+		name.each do |name|
+			name = name.capitalize!
+		end
+		@title = name.join(' ')
 	end
-
 end
