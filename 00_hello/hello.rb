@@ -1,9 +1,9 @@
 ## hello.rb
 
 def hello
-	"Hello"
+  "Hello"
 end
 
 def greet(name)
-	hello << ", #{name}!"
+  hello << ", #{name}!"
 end
