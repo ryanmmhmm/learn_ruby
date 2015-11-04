@@ -10,15 +10,15 @@ class Timer
 
   def time_string
     # the string is made up of 'aa:bb:cc'
-    a = (@seconds / 3600).to_s # hours
-    b = ((@seconds % 3600) / 60).to_s # minutes
-    c = ((@seconds % 3600) % 60).to_s # seconds
+    hours = (@seconds / 3600).to_s # hours
+    minutes = ((@seconds % 3600) / 60).to_s # minutes
+    seconds = ((@seconds % 3600) % 60).to_s # seconds
 
-    if a.length == 1 then a = a.prepend("0") end
-    if b.length == 1 then b = b.prepend("0") end
-    if c.length == 1 then c = c.prepend("0") end
+    if hours.length == 1 then hours = hours.prepend("0") end
+    if minutes.length == 1 then minutes = minutes.prepend("0") end
+    if seconds.length == 1 then seconds = seconds.prepend("0") end
 
-    @time_string = "#{a}:#{b}:#{c}"
+    @time_string = "#{hours}:#{minutes}:#{seconds}"
   end
 
 end
